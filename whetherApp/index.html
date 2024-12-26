@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with Animation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Weather App</h1>
+            <input type="text" id="location-input" placeholder="Enter City Name" />
+            <button id="get-weather-btn">Get Weather</button>
+        </header>
+        
+        <div class="weather-card" id="weather-card">
+            <div class="weather-info">
+                <h2 id="city-name">Loading...</h2>
+                <p id="temperature">Temperature: -- °C</p>
+                <p id="weather-description">Description: --</p>
+                <p id="humidity">Humidity: --%</p>
+            </div>
+            <div class="weather-icon">
+                <img id="weather-icon" src="" alt="Weather Icon" />
+            </div>
+        </div>
+
+        <footer>
+            <p>Powered by OpenWeatherMap</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #7b2ff7, #f72585);
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    width: 350px;
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.time-display {
+    font-size: 4rem;
+    margin-bottom: 30px;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.controls button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Start Button */
+#startStop {
+    background: linear-gradient(45deg, #28a745, #218838);
+    color: white;
+}
+
+/* Reset Button */
+#reset {
+    background: linear-gradient(45deg, #dc3545, #c82333);
+    color: white;
+}
+
+/* Lap Button */
+#lap {
+    background: linear-gradient(45deg, #007bff, #0069d9);
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Lap Times Section */
+.lap-times {
+    margin-top: 20px;
+    text-align: left;
+    max-height: 180px;
+    overflow-y: auto;
+    margin-top: 30px;
+}
+
+.lap-times h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#lapList {
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+}
+
+.lap-times ul li {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    font-family: 'Courier New', monospace;
+}
+
+.lap-times ul li:last-child {
+    border-bottom: none;
+}
+
+/* Add smooth scroll to lap list */
+#lapList {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 300px;
+        padding: 30px;
+    }
+
+    .controls button {
+        width: 100%;
+        max-width: 130px;
+    }
+}

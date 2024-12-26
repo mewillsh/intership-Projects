@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Fixed Navigation Menu -->
+    <nav class="navbar" id="navbar">
+        <div class="logo">
+            <a href="#">HappyNav</a>
+        </div>
+        
+        <!-- Hamburger Icon (only visible on small screens) -->
+        <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+            &#9776; <!-- Hamburger icon symbol -->
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Content Sections to enable scrolling -->
+    <section id="home">
+        <h2>Welcome to the Home Section</h2>
+        <p>Scroll down to see the navigation bar collapse and change style. This page is designed to give you a cheerful experience.</p>
+        <p>Let’s explore some exciting sections!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a fun-loving, innovative company with a passion for design and technology. Our mission is to create products that make people smile!</p>
+        <p>Founded in 2020, we specialize in web development, UI/UX design, and creating delightful digital experiences. Our team is passionate about bringing joy through our work.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Web Design</h3>
+            <p>We design clean, beautiful, and functional websites that not only look great but provide exceptional user experiences.</p>
+        </div>
+        <div class="service-item">
+            <h3>UI/UX Design</h3>
+            <p>Our team specializes in creating intuitive interfaces and delightful experiences for users on every platform.</p>
+        </div>
+        <div class="service-item">
+            <h3>Web Development</h3>
+            <p>We build robust, fast, and scalable websites using modern technologies like React, Node.js, and more.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Reach out to us for collaborations, inquiries, or just a friendly chat.</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
